@@ -13,7 +13,7 @@ plt.close('all')
 
 ############################## Parameters : All you need to modify is here
 nbr_images=1 # enter here the number of images you need to save when clicking the REC button.
-save_directory="/DIRECORY/TO/SAVE/FOLDER/" # path to save repository. BE AWARE that this scripts will erase previous images without regrets or remorse.
+save_directory="/DIRECTORY/TO/SAVE/FOLDER/" # path to save repository. BE AWARE that this scripts will erase previous images without regrets or remorse.
 exposure= 8000 # exposition time, in microseconds
 gain=0.5
 height=2048 # reducing this one allows one to increase the FPS
@@ -145,7 +145,7 @@ def REC2(event):
 
 if nbr_images== 1 and window==False:
   button.on_clicked(REC_one) # on click, call the REC function
-elif nbr_images!=1 and window=False:
+elif nbr_images!=1 and window==False:
   button.on_clicked(REC)
 elif window==True:
   button.on_clicked(REC2)
